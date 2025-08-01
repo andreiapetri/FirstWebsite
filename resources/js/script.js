@@ -2,18 +2,25 @@
 			var header = document.querySelector("header");
 			header.classList.toggle("sticky" , window.scrollY > 0)
 		});
-function buttonOneClick() {
-  let i = 0;
-  while (i < 1000) {
-    console.log('index is ', i);
-    i++;
-  }
-}
+window.addEventListener('scroll',reveal);
 
-function buttonTwoClick() {
-  console.log('button two clicked');
-}
-const button = document.getElementById(".btn");
-button.addEventListener("click",()=>{
-	document.getElementById("checkbox").checked=false;
-})
+	function reveal(){
+
+		var reveals = document.querySelectorAll('.reveal');
+
+		for(var i = 0; 1< reveals.length; i++){
+
+			var windowheight = window.innerHeight;
+			var revealtop = reveals[i].getBoundingClientRect().top;
+			var revealpoint = 0;
+
+			if(revealtop < windowheight - revealpoint){
+				reveals[i].classList.add('active','animate__fadeInDown');
+				reveals[i].classList.remove('invisibl');
+
+			}
+			else{
+				reveals[i].classList.remove('active','animate__fadeInDown');
+			}
+		}
+	}

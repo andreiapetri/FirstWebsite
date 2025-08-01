@@ -1,6 +1,3 @@
-html{
-	height: -webkit-fill-available;
-}
 *{
 	margin: 0;
 	padding: 0;
@@ -12,9 +9,6 @@ body{
 	color: white;
 	text-rendering: optimizeLegibility;
 	font-size: 16px;
-	height: -webkit-fill-available;
-	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-	
 }
 /*****		CLEARFIX		*****/
 
@@ -335,11 +329,14 @@ h2{
 	color: #fff;
 	font-weight: 300;
 }
+.header-box{
+
+}
+
 nav{
 	list-style: none;
 	position: absolute;
-	z-index: 110;
-}
+	z-index: 110;}
 nav li{
 	display: inline-block;
 	margin-right: 40px;
@@ -466,8 +463,9 @@ video{
 	height: 300px;
 	display: flex;
 	position: center;
-	border: solid white;
+	border: solid black;
 	margin-bottom: 30px;
+	border-radius: 10%;
 	border-width: 8px;
 }
 .work-heading{
@@ -591,13 +589,12 @@ cite{
 
 .packages-section{
 	background: linear-gradient(rgba(0,0,0,.7),rgb(0,0,0,.3));
-	min-height:70rem;
+	min-height: 50rem;
 }
 .packages-heading{
 	font-size: 250%;
 	margin-bottom: 150px;
 	text-align: center;
-	margin-top: 0px;
 }
 .package-box{
 	background-color: #454545;
@@ -663,14 +660,11 @@ cite{
 
 
 /*********		CONTACT FORM SECTION 		********/
+
+
 .contact-section{
 	background: linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7));
 	min-height: 45rem;
-	text-align: center;
-}
-.contact-section-2{
-	background: linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7));
-	min-height: 60rem;
 	text-align: center;
 }
 .contact-heading{
@@ -678,12 +672,6 @@ cite{
 	margin-bottom: 150px;
 	text-align: center;
 	margin-top: 150px;
-}
-.contact-heading-2{
-	font-size: 250%;
-	margin-bottom: 150px;
-	text-align: center;
-	margin-top: 25%;
 }
 .contact-form{
 	text-align: left;
@@ -695,7 +683,7 @@ label{
 	padding-top: 5px;
 }
 input[type=text],
-input[type=email], textarea,input[type=password]{
+input[type=email], textarea{
 	width: 100%;
 	padding: 7px;
 	border-radius: 3px;
@@ -780,27 +768,3 @@ footer p{
 .invisibl{
 	display: none;
 }
-.animate__fadeInDown{
-	animation-duration: 2s;
-	top: 300px;
-}
-.js-scroll {
- opacity: 0;
- transition: opacity 3s;
-}
-.js-scroll.scrolled {
-  opacity: 1;
-}
-.packages-heading{
-margin-top:0px;
-}
-
-
-
-
-
-
-
-
-
-
