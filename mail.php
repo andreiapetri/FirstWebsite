@@ -12,7 +12,7 @@ function send_mail($recipient,$subject,$message){
         $mail -> Host = "smtp.gmail.com";
         $mail -> SMTPAuth = TRUE;
         $mail -> Username = "andubaaaa.ek@gmail.com";
-        $mail -> Password = "ggxcokwgtanzrcvq";
+        $mail -> Password = "grcvq";
         $mail -> SMTPSecure = "ssl";
         $mail -> Port = 465;
        
@@ -26,4 +26,5 @@ function send_mail($recipient,$subject,$message){
         $mail -> MsgHTML($content);
         $mail -> send();
     }
+
     
