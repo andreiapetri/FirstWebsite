@@ -39,7 +39,7 @@ else {
 			</div></center>
 	</div>
 </section>
-  <script src="https://www.paypal.com/sdk/js?client-id=AeuhtGe7HZLnzTuGTE01sjS9TGYNPQyIxcS4sgYYc-YDpGDjkT8HAbA_N7qMiSeMYKeMRaxNjlOlprwo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script src="" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
       paypal.Buttons({
